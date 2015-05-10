@@ -1,0 +1,9 @@
+.row{
+    overflow: auto;
+}
+.col{
+    background:green;
+    padding:2px;
+    margin:3px;
+    float: left;
+}
