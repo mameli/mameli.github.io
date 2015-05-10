@@ -47,6 +47,11 @@ $(document).ready(function(){
   $(".current-section a").click(function(){
     $(window).scrollTop(0);
     return false;
-  })
+  });
+
+  $("#forkme_banner").on("mouseenter",function(){
+    alert("hello");
+    $(this).css({"background":"red"});
+  });
 });
 })(jQuery)
