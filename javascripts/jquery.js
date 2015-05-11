@@ -17,7 +17,7 @@ $( document ).ready(function() {
   for (var i=0;i<5;i++){
     rowNum="row"+i;
     $(".grid-game").append("<div id='"+rowNum+"' class='row'></div>");
-    for(var j=0;j<grid_width/25;j++){
+    for(var j=0;j<2.8*grid_width/50;j++){
       $("#"+rowNum).append("<div class='col'></div>");
     }
   }
