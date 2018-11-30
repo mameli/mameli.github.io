@@ -1,15 +1,17 @@
 $(document ).ready(function() {
   var rowNum;
   var grid_width=$(".grid-game").width();
+  var squareSide = 22;
+  var boxNum = grid_width/(squareSide+2+6);
   for (var i=0;i<7;i++){
     rowNum="row"+i;
-    $(".grid-game").append("<div id='"+rowNum+"' class='row'></div>");
-    for(var j=0;j<16;j++){
+    $(".grid-game").append("<div id='"+rowNum+"' class='row' style='margin:auto'></div>");
+    for(var j=0;j < Math.floor(boxNum); j++){
       $("#"+rowNum).append("<div class='col'></div>");
     }
   }
-  $(".col").width(grid_width/300*12);
-  $(".col").height(grid_width/300*12);
+  $(".col").width(squareSide);
+  $(".col").height(squareSide);
   changeColor();
 
 });
